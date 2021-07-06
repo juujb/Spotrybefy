@@ -43,8 +43,6 @@ function changeToWhite() {
   myWebpage.style.color = 'white';
 }
 
-
-
 function resetText(event) {
   event.target.innerText = 'Opção reiniciada';
 }
