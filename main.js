@@ -4,10 +4,6 @@ const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
-
-// Copie esse arquivo e edite apenas ele;
-// Crie uma função que adicione a classe 'tech' ao elemento selecionado;
-
 firstDiv.addEventListener('click', addRemoveTechClass);
 secondDiv.addEventListener('click',addRemoveTechClass);
 thirdDiv.addEventListener('click', addRemoveTechClass);
@@ -50,15 +46,9 @@ function changeToWhite() {
 
 
 function resetText(event) {
-  // O Event é passado como um parâmetro para a função.
   event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
 }
 
 firstDiv.addEventListener('dblclick', resetText);
 secondDiv.addEventListener('dblclick', resetText);
 thirdDiv.addEventListener('dblclick', resetText);
-// Não precisa passar o parâmetro dentro do addEventListener. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'divUm'.
